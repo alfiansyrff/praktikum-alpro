@@ -1,0 +1,25 @@
+program nomor3c;
+uses crt;
+
+var
+    i,j,k,l,n : integer;
+    kar: char;
+
+begin
+    clrscr;
+    write('Masukkan karakter: ');read(kar);
+    write('Masukkan n: ');read(n);
+    for i:= 1 to n do
+        begin
+            for j:=n downto i do
+                write('':2);
+            for k:=1 to i do
+                begin
+                    if (k=1) or (k=i) or (j=n) then
+                        write(kar:4)
+                    else 
+                        write('':4);
+                end;
+            writeln()
+        end;
+end.

@@ -1,0 +1,3 @@
+
+    kar: char;
+    pil: string;
